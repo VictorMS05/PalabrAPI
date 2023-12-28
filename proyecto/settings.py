@@ -19,6 +19,7 @@ load_dotenv()
 
 SecretKey = os.getenv('SECRET_KEY')
 Debug = os.getenv('DEBUG')
+Host = os.getenv('HOST')
 DBHost = os.getenv('DB_HOST')
 DBName = os.getenv('DB_NAME')
 DBUser = os.getenv('DB_USER')
@@ -37,7 +38,7 @@ SECRET_KEY = SecretKey
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = Debug
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [Host]
 
 
 # Application definition
